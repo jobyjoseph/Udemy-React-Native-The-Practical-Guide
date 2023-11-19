@@ -37,6 +37,7 @@ function GoalInput({ addGoalHandler, closeAddGoalModal, modalIsVisible }) {
                 addGoalHandler(enteredGoalText);
                 closeAddGoalModal();
               }}
+              color="#b180f0"
             />
           </View>
           <View style={styles?.button}>
@@ -45,6 +46,7 @@ function GoalInput({ addGoalHandler, closeAddGoalModal, modalIsVisible }) {
               onPress={() => {
                 closeAddGoalModal();
               }}
+              color="#f31282"
             />
           </View>
         </View>
@@ -68,9 +70,12 @@ const styles = StyleSheet.create({
   },
   textInput: {
     borderWidth: 1,
-    borderColor: "#cccccc",
+    borderColor: "#e4d0ff",
+    backgroundColor: "#e4d0ff",
+    color: "#120438",
+    borderRadius: 6,
     width: "100%",
-    padding: 12,
+    padding: 16,
   },
   buttonContainer: {
     marginTop: 16,
